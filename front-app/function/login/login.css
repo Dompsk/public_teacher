@@ -1,0 +1,95 @@
+@font-face {
+    font-family:Fontstyle;
+    src: url(NotoSansThai-VariableFont_wdth\,wght.ttf);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* จัดโลโก้และกล่องเรียงแนวตั้ง */
+    min-height: 100vh;
+    background-color: #f5f5f5;
+    margin: 0;
+    
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-right: 100px;
+}
+
+.container-front {
+    width: 500px;
+    height: 350px;
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center; 
+    position: relative;  /* เปลี่ยนจาก absolute เป็น relative */
+    margin-bottom: 250px;
+}
+
+.container-front h2{
+    font-size: 32px;
+    font-weight: bold;
+    font-family: Fontstyle;
+    color: #000000;
+    margin-bottom: 50px;
+}
+
+.line {
+    width: 100%;           /* กำหนดความกว้างตามต้องการ */
+    height: 12px;
+    background-color: #004085;
+    border-radius: 3px;
+    position: absolute;   /* วางตำแหน่งแบบ absolute */
+    top: 2%;             /* กึ่งกลางแนวตั้ง */
+    left: 50%;            /* กึ่งกลางแนวนอน */
+    transform: translate(-50%, -50%); /* จัดให้อยู่ตรงกลางจริง ๆ */
+}
+
+.input-box {
+    margin-bottom: 20px;
+}
+
+.input-box input {
+    width: 100%;
+    height: 45px;
+    padding: 0 15px;
+    font-size: 16px;
+    border: 2px solid #E0E0E0;
+    border-radius: 10px;
+    outline: none;
+    transition: all 0.3s;
+}
+
+.input-box input:focus {
+    border-color: #56CCF2;
+    box-shadow: 0 0 5px rgba(56, 204, 242, 0.5);
+}
+
+.input-box input::placeholder {
+    color: #BDBDBD;
+}
+
+.btn {
+    width: 90%;
+    height: 45px;
+    background: #004085;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-family: Fontstyle;
+}
+
+.btn:hover {
+    background: #12569f;
+}
